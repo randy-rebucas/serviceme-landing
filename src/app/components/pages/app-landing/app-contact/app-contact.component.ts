@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-
+class SectionTitleContent {
+    title: string;
+    paragraphText: string;
+}
+class Image {
+    img: string;
+}
 @Component({
     selector: 'app-app-contact',
     templateUrl: './app-contact.component.html',
@@ -7,28 +13,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppContactComponent implements OnInit {
 
+
+    sectionTitle: SectionTitleContent[] = [
+        {
+            title: 'Get In Touch With Us',
+            paragraphText: ''
+        }
+    ];
+    contactImage: Image[] = [
+        {
+            img: 'assets/img/app-contact.png'
+        }
+    ];
     constructor() { }
 
     ngOnInit(): void {
     }
 
-    sectionTitle: sectionTitleContent[] = [
-        {
-            title: 'Get In Touch With Us',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        }
-    ]
-    contactImage: Image[] = [
-        {
-            img: 'assets/img/app-contact.png'
-        }
-    ]
-
-}
-class sectionTitleContent {
-    title : string;
-    paragraphText : string;
-}
-class Image {
-    img : string;
 }

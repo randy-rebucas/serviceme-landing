@@ -58,6 +58,7 @@ import { ProductsFaqComponent } from './components/pages/products-landing/produc
 import { ProductsGalleryComponent } from './components/pages/products-landing/products-gallery/products-gallery.component';
 import { OtherProductsComponent } from './components/pages/products-landing/other-products/other-products.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

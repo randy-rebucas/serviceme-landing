@@ -7,17 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppScreenshotsComponent implements OnInit {
 
-    constructor() { }
-
-    ngOnInit(): void {
-    }
-
     sectionTitle: sectionTitleContent[] = [
         {
             title: 'App Screenshots',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            paragraphText: ''
         }
-    ]
+    ];
     screenshotImage: Image[] = [
         {
             img: 'assets/img/screenshot/1.png'
@@ -37,7 +32,12 @@ export class AppScreenshotsComponent implements OnInit {
         {
             img: 'assets/img/screenshot/6.png'
         }
-    ]
+    ];
+    constructor() { }
+
+    ngOnInit(): void {
+    }
+
 
 }
 class sectionTitleContent {

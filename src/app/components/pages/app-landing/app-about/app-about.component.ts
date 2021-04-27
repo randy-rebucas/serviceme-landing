@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+class Image {
+    img: string;
+}
 @Component({
     selector: 'app-app-about',
     templateUrl: './app-about.component.html',
@@ -63,6 +66,3 @@ export class AppAboutComponent implements OnInit {
 
 }
 
-class Image {
-    img: string;
-}

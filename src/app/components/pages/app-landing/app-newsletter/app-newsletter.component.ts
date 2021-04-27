@@ -1,4 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+class Image {
+    img: string;
+}
+class Content {
+    title: string;
+    paragraph: string;
+    inputPlaceholder: string;
+    buttonText: string;
+}
 
 @Component({
     selector: 'app-app-newsletter',
@@ -6,12 +15,6 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./app-newsletter.component.scss']
 })
 export class AppNewsletterComponent implements OnInit {
-
-    constructor() { }
-
-    ngOnInit(): void {
-    }
-
     newsletterImage: Image[] = [
         {
             img: 'assets/img/newsletter.png'
@@ -20,19 +23,14 @@ export class AppNewsletterComponent implements OnInit {
     newsletterContent: Content[] = [
         {
             title: 'Subscribe To Our Newsletter',
-            paragraph: 'Lorem ipsum dolor sit amet consectetur adipiscing ipsum sLorem ipsuia dolor sit amet, consectetur adipisci velit sed quia non numquam quaerat voluptatem. Uspendisse ultrices gravida.',
+            paragraph: '',
             inputPlaceholder: 'Your Email Address',
             buttonText: 'Subscribe Now'
         }
-    ]
+    ];
 
-}
-class Image {
-    img : string;
-}
-class Content {
-    title : string;
-    paragraph : string;
-    inputPlaceholder : string;
-    buttonText : string;
+    constructor() { }
+
+    ngOnInit(): void {
+    }
 }

@@ -1,4 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+class SectionTitleContent {
+    title: string;
+    paragraphText: string;
+}
+class Content {
+    feedbackText: string;
+    userImg: string;
+    userName: string;
+    userDesignation: string;
+}
 
 @Component({
     selector: 'app-app-feedback',
@@ -7,17 +17,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppFeedbackComponent implements OnInit {
 
-    constructor() { }
-
-    ngOnInit(): void {
-    }
-
-    sectionTitle: sectionTitleContent[] = [
+    sectionTitle: SectionTitleContent[] = [
         {
             title: 'User Feedback',
             paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         }
-    ]
+    ];
     singleFeedbackItem: Content[] = [
         {
             feedbackText: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium sihs doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.',
@@ -43,16 +48,11 @@ export class AppFeedbackComponent implements OnInit {
             userName: 'James Anderson',
             userDesignation: 'Manager'
         }
-    ]
+    ];
+    constructor() { }
 
-}
-class sectionTitleContent {
-    title : string;
-    paragraphText : string;
-}
-class Content {
-    feedbackText : string;
-    userImg : string;
-    userName : string;
-    userDesignation : string;
+    ngOnInit(): void {
+    }
+
+
 }

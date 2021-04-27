@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+class Content {
+    title: string;
+    videoLink: string;
+}
 
 @Component({
     selector: 'app-app-how-it-works',
@@ -7,20 +11,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppHowItWorksComponent implements OnInit {
 
+    videoContent: Content[] = [
+        {
+            title: 'How it Works?',
+            videoLink: 'https://www.youtube.com/watch?v=JJXF_kBPFPo'
+        }
+    ];
+
     constructor() { }
 
     ngOnInit(): void {
     }
 
-    videoContent: Content[] = [
-        {
-            title: 'How it Works?',
-            videoLink: 'https://www.youtube.com/watch?v=wKCsprWTN70'
-        }
-    ]
 
-}
-class Content {
-    title : string;
-    videoLink : string;
 }

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
+class SectionTitleContent {
+    title: string;
+    paragraphText: string;
+}
 @Component({
     selector: 'app-app-team',
     templateUrl: './app-team.component.html',
@@ -12,7 +15,7 @@ export class AppTeamComponent implements OnInit {
             title: 'Our Expert Team',
             paragraphText: 'This are the people behind cutsonwheel that gives professionals better work experience.'
         }
-    ]
+    ];
     singleTeamBox = [
         {
             img: 'assets/img/team/team1.jpg',
@@ -78,7 +81,3 @@ export class AppTeamComponent implements OnInit {
     }
 }
 
-class SectionTitleContent {
-    title: string;
-    paragraphText: string;
-}

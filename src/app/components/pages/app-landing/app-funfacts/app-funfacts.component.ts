@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+class Content {
+    icon: string;
+    title: string;
+    subTitle: string;
+}
 
 @Component({
     selector: 'app-app-funfacts',
@@ -35,9 +40,4 @@ export class AppFunfactsComponent implements OnInit {
     }
 
 
-}
-class Content {
-    icon : string;
-    title : string;
-    subTitle : string;
 }

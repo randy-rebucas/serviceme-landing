@@ -1,5 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
+class Content {
+    title: string;
+    paragraph: string;
+    button1: string;
+    button2: string;
+}
+class Image {
+    img: string;
+}
 @Component({
   selector: 'app-app-banner',
   templateUrl: './app-banner.component.html',
@@ -27,12 +35,4 @@ export class AppBannerComponent implements OnInit {
     }
 
 }
-class Content {
-    title: string;
-    paragraph: string;
-    button1: string;
-    button2: string;
-}
-class Image {
-    img: string;
-}
+

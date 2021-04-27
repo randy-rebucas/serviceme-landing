@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+class Text {
+    text: string;
+}
 
 @Component({
     selector: 'app-footer',
@@ -7,18 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+    copyrightText: Text[] = [
+        {
+            text: 'cutsonwheel @ 2019'
+        }
+    ];
     constructor() { }
 
     ngOnInit(): void {
     }
 
-    copyrightText: Text[] = [
-        {
-            text: '2020 Nial. All Rights Reserved by HiBootstrap.com'
-        }
-    ]
 
-}
-class Text {
-    text : string;
 }

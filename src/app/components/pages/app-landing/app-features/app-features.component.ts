@@ -1,4 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+class SectionTitleContent {
+    title: string;
+    paragraphText: string;
+}
+class FeaturesContent {
+    icon: string;
+    title: string;
+    paragraph: string;
+}
 
 @Component({
     selector: 'app-app-features',
@@ -51,13 +60,4 @@ export class AppFeaturesComponent implements OnInit {
     }
 
 
-}
-class SectionTitleContent {
-    title : string;
-    paragraphText : string;
-}
-class FeaturesContent {
-    icon : string;
-    title : string;
-    paragraph : string;
 }
